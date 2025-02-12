@@ -1,0 +1,6 @@
+type HubTransfer {
+  id: ID!
+  from: String!
+  to: String!
+  amount: BigInt! @index
+}
