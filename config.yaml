@@ -83,5 +83,5 @@ networks:
     handler: src/EventHandlers.ts
     events:
       - event: ExecutionSuccess(bytes32 txHash, uint256 payment)
-rollback_on_reorg: false # turn on for prod
+rollback_on_reorg: true
 raw_events: true # this has slight storage & write overhead, in the context of this indexer it makes sence to have on :)
